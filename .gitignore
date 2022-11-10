@@ -1,0 +1,53 @@
+.DS_Store
+bin/
+.gradle/
+build/
+config/
+!cmd/provenanced/config/
+data/
+.idea/
+*.swp
+utils/
+!cmd/dbmigrate/utils
+.blockade
+blockade.yaml
+*.sock
+.provenance
+.provenanced
+keyring-*
+vendor/
+*.account
+
+# VS Code
+.history/
+.vscode/
+__debug_bin
+
+# Eclipse
+.project
+.classpath
+
+# Intellij
+out/
+.settings/
+profile.iml
+profile.ipr
+profile.iws
+/.datastore
+*.iml
+*.ipr
+*.iws
+
+# Tools make target marker
+tools-stamp
+tmp-swagger-gen
+proto-tools-stamp
+
+#emacs tmp files
+.#*
+
+#direnv setup
+.envrc
+
+# proto generated files
+proto/gen/

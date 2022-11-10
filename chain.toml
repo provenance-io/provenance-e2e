@@ -1,0 +1,23 @@
+chain_id = "mainnet"
+
+validators = 1
+accounts = 1
+binary = "../provenance/build/provenanced"
+hrp_prefix = "pb"
+denom = "nhash"
+coin_type = 505
+
+[config_node.app]
+minimum-gas-prices = "1905nhash"
+api = { enable = true, swagger = true, enabled-unsafe-cors = true }
+rosetta = { enable = false }
+
+[config_node.config]
+instrumentation = { prometheus = false }
+p2p = { addr_book_strict = false, allow_duplicate_ip = true }
+
+[config_genesis.app_state.gov]
+voting_params = { voting_period = "600s" }
+
+[config_genesis.app_state.mint]
+minter = { inflation = "0.300000000000000000" }
